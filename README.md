@@ -49,4 +49,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com ♥ by Rodrigo Cardoso com o apoido da Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
+Feito com ♥ by Rodrigo Cardoso com o apoio da Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
