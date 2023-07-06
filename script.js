@@ -13,7 +13,7 @@ function toggleMode() {
     img.setAttribute("alt", "Foto de Rodrigo Cardoso de roupa preta")
   } else {
     // se tiver sem light mode, manter a imagem normal
-    img.setAttribute("src", "./assets/avatar.png")
+    img.setAttribute("src", "./avatar.png")
     img.setAttribute("alt", "Foto de Rodrigo Cardoso de roupa preta")
   }
 }
