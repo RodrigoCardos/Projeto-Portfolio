@@ -28,11 +28,13 @@
 }
 
 body {
+  display: table; /* Necessário para a responsividade de dispositivos desktop em janela com scroll pra rolar */
   background-image: var(--bg-url);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  height: 100%;
+  height: 100vh;
+  width: 100%;
 }
 
 body * {
@@ -101,7 +103,6 @@ body * {
   transition: 0.5s ease;
   animação de rotação antes da aula de correção.*/
 }
-
 
 #switch span {
   display: block;
