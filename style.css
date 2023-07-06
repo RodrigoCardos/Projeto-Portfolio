@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 :root {
@@ -32,7 +32,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 }
 
 body * {
@@ -81,22 +81,27 @@ body * {
   top: -15%;
   left: 0;
   z-index: 1;
-  transition: transform 0.5s;
+  transition: transform 0.25s;
+  animation: slide-back 0.3s;
 }
 
 #switch button:hover {
+  outline: 8px solid var(--highlight-color);
   background: rgb(255, 255, 255) var(--switch-transition-bg-url) no-repeat
     center;
   transform: rotate(-90deg);
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 .light #switch button {
-  right: 0;
+  animation: slide-in 0.3s forwards;
+  /* right: 0;
   left: initial;
   transform: rotate(-90deg), translate(5%, 0%);
   transition: 0.5s ease;
+  animação de rotação antes da aula de correção.*/
 }
+
 
 #switch span {
   display: block;
@@ -107,7 +112,7 @@ body * {
   background: var(--surface-color);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  transition: 0.5s;
+  transition: 0.3s;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -179,13 +184,13 @@ footer {
 footer p {
   display: inline;
   color: var(--text-color);
-  transition: all 0.4s;
+  transition: all 0.3s;
 }
 
 #heart:hover {
   font-size: 24px;
   color: #ff0000;
-  transition: 0.4s ease;
+  transition: 0.3s;
 }
 
 /* media queries */
@@ -195,5 +200,24 @@ footer p {
   }
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+/* animation */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
