@@ -9,7 +9,7 @@ function toggleMode() {
   // substituir o avatar
   if (html.classList.contains("light")) {
     //se tiver light mode, adicionar a imagem light
-    img.setAttribute("src", "./assets/avatar-light.png")
+    img.setAttribute("src", "./avatar-light.png")
     img.setAttribute("alt", "Foto de Rodrigo Cardoso de roupa preta")
   } else {
     // se tiver sem light mode, manter a imagem normal
