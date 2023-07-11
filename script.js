@@ -18,6 +18,7 @@ function toggleMode() {
   }
 }
 
+// function para copiar o email
 function copyText() {
   // selecionar o elemento de input de texto
   var input = document.getElementById("texto")
