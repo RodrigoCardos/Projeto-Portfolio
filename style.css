@@ -148,32 +148,6 @@ ul li a:hover {
   border: 1.5px solid var(--text-color);
 }
 
-/* #email {
-  text-align: center;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-#email::before {
-  content: "rodrigcardoso1@gmail.com";
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  display: block;
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  transition: transform 200ms ease;
-  transform-origin: right;
-  transform: scaleX(0);
-  border-radius: 8px;
-}
-
-#email:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
-} */
-
 #texto {
   display: none;
 }
