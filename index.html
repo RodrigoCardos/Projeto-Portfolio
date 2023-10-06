@@ -1,90 +1,107 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="light">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+<html lang="pt-br" class="">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+			rel="stylesheet"
+		/>
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="container">
-      <div id="profile">
-        <img src="./avatar.png" alt="Foto de Rodrigo Cardoso de roupa preta" />
-        <p>Rodrigo Cardoso</p>
-      </div>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <div id="switch">
-        <button onclick="toggleMode()" onclick="moveButton()"></button>
-        <span></span>
-      </div>
+		<title>Portfólio</title>
 
-      <ul>
-        <li>
-          <a
-            href="https://symphonious-daffodil-b749cf.netlify.app"
-            target="_blank"
-            >Relógio Digital Dinâmico</a
-          >
-        </li>
-        <li>
-          <a href="https://elaborate-narwhal-1f6bfd.netlify.app" target="_blank"
-            >Calculadora Operacional</a
-          >
-        </li>
-        <li>
-          <a href="rodrigodev.pdf" download target="_blank"
-            >Baixar meu currículo</a
-          >
-        </li>
-        <li>
-          <a onclick="copyText()">E-mail para contato</a>
-          <input type="text" id="texto" value="rodrigcardoso1@gmail.com" />
-        </li>
-      </ul>
+		<link rel="stylesheet" href="style.css" />
+	</head>
 
-      <div id="social-links">
-        <a href="https://github.com/rodrigocardos/" target="_blank">
-          <ion-icon name="logo-github"></ion-icon>
-        </a>
-        <a href="https://www.instagram.com/rodrigo.onn/" target="_blank">
-          <ion-icon name="logo-instagram"></ion-icon>
-        </a>
-        <a href="https://wa.me/5581983080914" target="_blank">
-          <ion-icon name="logo-whatsapp"></ion-icon>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/rodrigo-cardoso-y/"
-          target="_blank"
-        >
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-      </div>
+	<body>
+		<div id="container">
+			<div id="profile">
+				<img src="./avatar.png" alt="Foto de Rodrigo de roupa preta" />
+				<p>Rodrigo Cardoso</p>
+			</div>
 
-      <footer>
-        Feito com
-        <p id="heart" title="amor">♥</p>
-        by Rodrigo Cardoso
-      </footer>
-    </div>
+			<div id="switch">
+				<button onclick="toggleMode()" onclick="moveButton()"></button>
+				<span></span>
+			</div>
 
-    <!-- script dos icones usados -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+			<ul>
+				<li>
+					<a
+						href="https://symphonious-daffodil-b749cf.netlify.app"
+						target="_blank"
+						>Relógio Digital Dinâmico</a
+					>
+				</li>
+				<li>
+					<a href="https://elaborate-narwhal-1f6bfd.netlify.app" target="_blank"
+						>Calculadora Operacional</a
+					>
+				</li>
+				<li>
+					<a href="rodrigodev.pdf" download target="_blank"
+						>Baixar meu currículo</a
+					>
+				</li>
+				<li>
+					<a id="meuEmail" onclick="buttonEmail()">E-mail para contato</a>
+					<input
+						type="text"
+						id="texto"
+						value="rodrigcardoso1@gmail.com"
+						readonly
+					/>
+				</li>
+			</ul>
 
-    <script src="./script.js"></script>
-  </body>
+			<div id="social-links">
+				<a href="https://github.com/rodrigocardos/" target="_blank">
+					<ion-icon name="logo-github"></ion-icon>
+				</a>
+				<a href="https://www.instagram.com/rodrigo.onn/" target="_blank">
+					<ion-icon name="logo-instagram"></ion-icon>
+				</a>
+				<a href="https://wa.me/5581983080914" target="_blank">
+					<ion-icon name="logo-whatsapp"></ion-icon>
+				</a>
+				<a
+					href="https://www.linkedin.com/in/rodrigo-cardoso-y/"
+					target="_blank"
+				>
+					<ion-icon name="logo-linkedin"></ion-icon>
+				</a>
+				<a href="#" id="shareMobile">
+					<ion-icon name="send-outline"></ion-icon>
+				</a>
+			</div>
+
+			<footer class="hover-text">
+				Feito com
+				<p title="amor">♥</p>
+				by <a href="https://www.instagram.com/rodrigo.onn/">Rodrigo C.</a>
+			</footer>
+		</div>
+
+		<!-- script dos icones usados -->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+
+		<script src="./script.js"></script>
+	</body>
 </html>
