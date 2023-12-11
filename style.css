@@ -213,6 +213,7 @@ footer a {
 
 footer a:hover {
 	text-decoration: underline;
+	text-shadow: 0px 6px 7px var(--surface-color);
 }
 
 footer:hover {
